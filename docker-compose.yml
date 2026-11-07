@@ -1,0 +1,11 @@
+services:
+  jupyter:
+    build: .
+    container_name: mini-traffic-detection
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    gpus: all
+    shm_size: "2gb"

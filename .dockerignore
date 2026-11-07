@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.cache
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+/img/
+/ann/
+
+# Ignore all result files except selected training run
+/result/*
+!/result/training/
+
+/result/training/*
+!/result/training/phase6_yolov8n_20261101_210939/
+
+/result/training/phase6_yolov8n_20261101_210939/*
+!/result/training/phase6_yolov8n_20261101_210939/**
+
+# Model weights: ignore globally, except selected run
+*.pt
+*.pth
+!/result/training/phase6_yolov8n_20261101_210939/**/*.pt
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
